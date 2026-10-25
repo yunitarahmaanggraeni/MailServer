@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8fb">
+  <meta name="description" content="Media edukasi keamanan email dan mail server: pelajari ancaman, praktik perlindungan, simulasi inbox, dan kuis interaktif.">
+  <title>Mail Server — Kenali Ancaman Email</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/simulation.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Langsung ke konten</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#beranda" aria-label="Mail Server, ke beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><rect x="3" y="7" width="34" height="26" rx="9" fill="currentColor"/><path d="m9 14 11 9 11-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="m16 27 4-3 4 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-name">mail<span>server</span><small>RUANG BELAJAR KEAMANAN EMAIL</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Buka menu navigasi">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#materi">Materi</a>
+        <a href="#ancaman">Ancaman</a>
+        <a href="#simulasi">Simulasi</a>
+        <a href="#kuis">Kuis</a>
+        <a href="#tips">Tips keamanan</a>
+        <a href="#tentang">Tentang</a>
+      </nav>
+    </div>
+  </header>
+
+  <noscript><p class="noscript-notice">Materi tetap dapat dibaca, tetapi simulasi dan kuis memerlukan JavaScript aktif di browser.</p></noscript>
+  <main id="main-content">
+    <section class="hero section-shell" id="beranda" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> BELAJAR AMAN, MULAI DARI INBOX</p>
+        <h1 id="hero-title">Kenali Ancaman Email,<br><span>Lindungi Data Digitalmu.</span></h1>
+        <p class="hero-description">Pelajari keamanan mail server, kenali email mencurigakan, dan bangun kebiasaan digital yang lebih aman melalui materi interaktif dan simulasi edukatif.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#materi">Pelajari keamanan email <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#simulasi"><span class="play-icon" aria-hidden="true">▶</span> Mulai simulasi</a>
+        </div>
+        <div class="hero-note"><span class="note-check" aria-hidden="true">✓</span> Belajar tanpa mengirim email atau membagikan data pribadi.</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi email yang terlindungi" role="img">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <span class="spark spark-one" aria-hidden="true">✳</span><span class="spark spark-two" aria-hidden="true">✦</span>
+        <div class="mail-card">
+          <div class="mail-card-top"><span class="mail-card-label"><i></i> INBOX TERLINDUNGI</span><span class="mail-dots">•••</span></div>
+          <div class="mail-illustration">
+            <svg viewBox="0 0 300 190" role="presentation" aria-hidden="true">
+              <path d="M49 74a101 75 0 0 1 202 0v36a101 75 0 0 1-202 0V74Z" fill="#FBE5EF"/>
+              <rect x="58" y="60" width="152" height="105" rx="18" fill="#fff" stroke="#E8A8C3" stroke-width="3"/>
+              <path d="m67 77 67 51 67-51" fill="#FCE7F0" stroke="#D96B9C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="m69 151 48-39m83 39-48-39" stroke="#D96B9C" stroke-width="4" stroke-linecap="round"/>
+              <path d="M213 54c0-19 15-34 34-34s34 15 34 34v17h-68V54Z" fill="#C94F87"/>
+              <rect x="203" y="66" width="88" height="67" rx="19" fill="#E879A9"/>
+              <path d="M247 86a9 9 0 0 0-9 9c0 4 2 7 5 8v12h8v-12c3-1 5-4 5-8a9 9 0 0 0-9-9Z" fill="#fff"/>
+              <circle cx="91" cy="97" r="5" fill="#E879A9"/><path d="M106 97h38" stroke="#F0DCE6" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="218" cy="151" r="5" fill="#F2C86A"/><path d="m218 145 1.6 4.4L224 151l-4.4 1.6L218 157l-1.6-4.4L212 151l4.4-1.6L218 145Z" fill="#FFF"/>
+            </svg>
+          </div>
+          <div class="mail-card-bottom"><span class="status-shield" aria-hidden="true">✓</span><span>Periksa dulu, baru percaya.</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+        </div>
+        <div class="floating-tag tag-left"><span class="tag-dot"></span> Identitas diperiksa</div>
+        <div class="floating-tag tag-right"><span aria-hidden="true">✦</span> Pikir sebelum klik</div>
+      </div>
+      <a class="hero-scroll" href="#mulai-belajar"><span></span> GULIR UNTUK MENJELAJAH</a>
+    </section>
+
+    <section class="intro-band" id="mulai-belajar">
+      <div class="section-shell intro-inner">
+        <p class="eyebrow">EMAIL ADALAH BAGIAN DARI KEHIDUPAN DIGITAL</p>
+        <div class="intro-grid">
+          <h2>Satu inbox.<br><span>Banyak hal yang perlu dijaga.</span></h2>
+          <div>
+            <p>Email membantu kita berkomunikasi, bekerja, dan menerima informasi penting. Di balik kemudahannya, ada akun, data, dan infrastruktur yang perlu dilindungi.</p>
+            <p class="intro-secondary">Mail Server adalah ruang belajar untuk memahami bagaimana email bekerja, mengenali pola risiko, dan memilih respons yang lebih aman—tanpa membuatmu kewalahan dengan istilah teknis.</p>
+            <a class="text-link" href="#materi">Jelajahi jalur belajar <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="topic-strip" aria-label="Topik pembelajaran">
+          <span><b>01</b> Dasar email</span><span><b>02</b> Ancaman umum</span><span><b>03</b> Deteksi interaktif</span><span><b>04</b> Kebiasaan aman</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="materi" aria-labelledby="materi-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">FONDASI YANG PERLU DIKENAL</p><h2 id="materi-title">Mulai dari <span>dasarnya.</span></h2></div>
+        <p>Kenali komponen dan prinsip keamanan yang membantu kita memahami apa yang perlu dilindungi.</p>
+      </div>
+      <div class="learning-grid">
+        <article class="learning-card learning-card-featured">
+          <span class="card-index">01 / DASAR</span><span class="learning-icon icon-envelope" aria-hidden="true">✉</span>
+          <h3>Email &amp; mail server</h3>
+          <p>Email adalah pesan elektronik. Mail server adalah sistem yang menerima, menyimpan, meneruskan, atau mengirim pesan tersebut.</p>
+          <div class="learning-detail"><b>Contoh sederhana</b><p>Seperti layanan pos: aplikasi email menulis pesan, server mengantarkannya ke server penerima.</p></div>
+          <div class="key-point"><b>Intinya</b><span>Perjalanan pesan melibatkan perangkat, akun, dan server—bukan hanya aplikasi inbox.</span></div>
+          <a class="reference-chip" href="#ref-nist">Baca: NIST SP 800-177 Rev. 1 ↗</a>
+        </article>
+        <article class="learning-card">
+          <span class="card-index">02 / PRINSIP</span><span class="learning-icon icon-triad" aria-hidden="true">◈</span>
+          <h3>CIA Triad</h3>
+          <p>Tiga tujuan utama keamanan informasi: kerahasiaan (Confidentiality), integritas (Integrity), dan ketersediaan (Availability).</p>
+          <div class="learning-detail"><b>Contoh sederhana</b><p>Pesan hanya dibaca penerima yang berhak, isinya tidak diubah, dan layanan tetap tersedia.</p></div>
+          <div class="key-point"><b>Ingat</b><span>Ketiganya saling melengkapi; keamanan bukan hanya soal merahasiakan pesan.</span></div>
+          <a class="reference-chip" href="#ref-nist">Baca: NIST SP 800-177 Rev. 1 ↗</a>
+        </article>
+        <article class="learning-card">
+          <span class="card-index">03 / PERLINDUNGAN</span><span class="learning-icon icon-shield" aria-hidden="true">⌑</span>
+          <h3>Akun ≠ infrastruktur</h3>
+          <p>Keamanan akun berfokus pada akses pengguna. Keamanan infrastruktur mencakup server, konfigurasi, jaringan, dan operasionalnya.</p>
+          <div class="learning-detail"><b>Contoh sederhana</b><p>MFA melindungi proses masuk akun; pembaruan server dan kontrol akses melindungi layanan.</p></div>
+          <div class="key-point"><b>Perlu keduanya</b><span>Akun yang kuat tetap membutuhkan layanan yang dikelola secara aman.</span></div>
+          <a class="reference-chip" href="#tips">Lihat praktik perlindungan ↗</a>
+        </article>
+        <article class="learning-card learning-card-wide">
+          <span class="card-index">04 / AUTENTIKASI EMAIL</span><span class="learning-icon icon-key" aria-hidden="true">⌘</span>
+          <h3>SPF, DKIM, dan DMARC</h3>
+          <p>Standar yang membantu domain mengatur dan memeriksa autentikasi email. Ketiganya membantu penerima menilai identitas domain pengirim—bukan memastikan isi pesan pasti aman.</p>
+          <div class="protocol-pills"><span>SPF <small>RFC 7208</small></span><span>DKIM <small>RFC 6376</small></span><span>DMARC <small>RFC 7489</small></span></div>
+          <a class="reference-chip" href="#referensi">Lihat referensi standar ↗</a>
+        </article>
+      </div>
+      <aside class="note-panel"><span aria-hidden="true">✳</span><p><b>Catatan penting</b> Email yang lolos pemeriksaan autentikasi domain pun masih dapat berisi permintaan berisiko atau konten berbahaya. Tetap periksa konteks, pengirim, dan isi pesan.</p></aside>
+    </section>
+
+    <section class="threat-section" id="ancaman" aria-labelledby="ancaman-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">KENALI POLANYA, BUKAN PANIKNYA</p><h2 id="ancaman-title">Ancaman yang sering <span>mampir.</span></h2></div>
+          <p>Memahami ciri umum membantu kita berhenti sejenak, memverifikasi, lalu merespons dengan tepat.</p>
+        </div>
+        <div class="threat-grid">
+          <article class="threat-card"><span class="threat-symbol symbol-pink" aria-hidden="true">↗</span><span class="risk-label">PENGGUNA</span><h3>Phishing</h3><p>Pesan yang mencoba memanipulasi penerima agar membagikan informasi atau melakukan tindakan tertentu.</p><dl><dt>Pola umum</dt><dd>Desakan waktu, tautan tak terduga, atau permintaan data sensitif.</dd><dt>Risiko &amp; respons</dt><dd>Akun atau data dapat terpapar. Jangan klik; verifikasi lewat kanal resmi yang sudah dikenal.</dd></dl></article>
+          <article class="threat-card"><span class="threat-symbol symbol-rose" aria-hidden="true">＠</span><span class="risk-label">IDENTITAS</span><h3>Email spoofing</h3><p>Pemalsuan informasi pengirim yang ditampilkan agar pesan tampak berasal dari pihak lain.</p><dl><dt>Pola umum</dt><dd>Nama terlihat akrab, tetapi alamat atau konteks tidak sesuai.</dd><dt>Risiko &amp; respons</dt><dd>Dapat mendukung penipuan. Periksa alamat lengkap dan konfirmasi permintaan di luar email.</dd></dl></article>
+          <article class="threat-card"><span class="threat-symbol symbol-gold" aria-hidden="true">▤</span><span class="risk-label">INBOX</span><h3>Spam</h3><p>Pesan massal yang tidak diminta; sebagian mengganggu, sebagian dapat menjadi kendaraan penipuan.</p><dl><dt>Pola umum</dt><dd>Pesan tidak relevan, promosi agresif, atau pengirim tak dikenal.</dd><dt>Risiko &amp; respons</dt><dd>Dapat memancing klik atau memenuhi inbox. Tandai sebagai spam dan hindari tautan tak dikenal.</dd></dl></article>
+          <article class="threat-card"><span class="threat-symbol symbol-lilac" aria-hidden="true">⌁</span><span class="risk-label">PERANGKAT &amp; DATA</span><h3>Malware</h3><p>Perangkat lunak berbahaya dapat disebarkan lewat lampiran atau tautan yang tidak aman.</p><dl><dt>Pola umum</dt><dd>Lampiran yang tidak diharapkan atau ajakan membuka file dengan segera.</dd><dt>Risiko &amp; respons</dt><dd>Perangkat atau data dapat terdampak. Jangan buka; laporkan dan ikuti prosedur keamanan.</dd></dl></article>
+          <article class="threat-card"><span class="threat-symbol symbol-blue" aria-hidden="true">⌑</span><span class="risk-label">AKUN &amp; SERVER</span><h3>Akses tidak sah</h3><p>Pihak yang tidak berwenang memperoleh akses ke akun atau layanan email.</p><dl><dt>Pola umum</dt><dd>Kata sandi digunakan ulang, perlindungan lemah, atau kontrol akses kurang tepat.</dd><dt>Risiko &amp; respons</dt><dd>Pesan dan pengaturan dapat disalahgunakan. Gunakan MFA dan akses minimum yang diperlukan.</dd></dl></article>
+          <article class="threat-card"><span class="threat-symbol symbol-green" aria-hidden="true">◌</span><span class="risk-label">KOMUNIKASI</span><h3>Kebocoran &amp; penyadapan</h3><p>Informasi email dapat terekspos saat penyimpanan, akses, atau transmisi tidak terlindungi.</p><dl><dt>Pola umum</dt><dd>Konfigurasi lemah, perangkat terkompromi, atau akses yang tidak semestinya.</dd><dt>Risiko &amp; respons</dt><dd>Kerahasiaan terganggu. Terapkan kontrol akses, TLS, dan penanganan insiden yang tepat.</dd></dl></article>
+        </div>
+        <p class="section-footnote">Ancaman dapat menargetkan pengguna, akun, data, maupun infrastruktur. Ciri-ciri di atas adalah petunjuk untuk diperiksa, bukan bukti tunggal.</p>
+      </div>
+    </section>
+
+    <section class="simulation-section section-shell" id="simulasi" aria-labelledby="simulasi-title">
+      <div class="simulation-heading">
+        <div><p class="eyebrow">LAB MINI · SEMUA SKENARIO FIKTIF</p><h2 id="simulasi-title">Berani jadi <span>detektif inbox?</span></h2><p>Baca pesan, cari petunjuk, lalu tentukan penilaianmu. Tidak ada tautan aktif atau data sungguhan.</p></div>
+        <div class="sim-stamp" aria-hidden="true"><span>PAUSE</span><b>→</b><span>PERIKSA</span><b>→</b><span>PUTUSKAN</span></div>
+      </div>
+      <div class="sim-workbench">
+        <div class="sim-sidebar"><span class="sim-sidebar-label">LATIHAN INBOX</span><span class="sim-sidebar-icon" aria-hidden="true">✉</span><p>Lima pesan contoh untuk melatih kewaspadaanmu.</p><div class="sim-progress-track"><span id="sim-progress"></span></div><p class="sim-step-label" id="sim-step" aria-live="polite">Skenario 1 dari 5</p><div class="sim-privacy"><span aria-hidden="true">⌑</span> Hanya simulasi lokal.<br>Tak ada data yang dikirim.</div></div>
+        <div class="sim-content" id="simulation-app" aria-live="polite">
+          <div class="sim-loading"><span class="loading-dot"></span> Menyiapkan inbox latihan…</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="kuis" aria-labelledby="kuis-title">
+      <div class="section-shell quiz-layout">
+        <div class="quiz-intro"><p class="eyebrow">CEK PEMAHAMANMU</p><h2 id="kuis-title">Sedikit kuis,<br><span>banyak wawasan.</span></h2><p>Sepuluh pertanyaan singkat tentang ancaman, autentikasi, dan kebiasaan aman. Satu per satu, dengan pembahasan setelah menjawab.</p><div class="quiz-topics"><span>Phishing</span><span>CIA Triad</span><span>SPF · DKIM · DMARC</span><span>TLS &amp; MFA</span></div><div class="quiz-decoration" aria-hidden="true"><span>?</span><i>✦</i></div></div>
+        <div class="quiz-panel" id="quiz-app" aria-live="polite">
+          <div class="quiz-loading">Kuis siap dimulai.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips-section section-shell" id="tips" aria-labelledby="tips-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">LANGKAH KECIL, DAMPAK BERARTI</p><h2 id="tips-title">Jaga inbox, jaga <span>layanan.</span></h2></div>
+        <p>Perlindungan email adalah tanggung jawab bersama pengguna dan pengelola sistem.</p>
+      </div>
+      <div class="tips-grid">
+        <article class="tips-column">
+          <div class="tips-column-heading"><span class="tips-avatar user-avatar" aria-hidden="true">01</span><div><span>UNTUK PENGGUNA</span><h3>Kebiasaan aman sehari-hari</h3></div></div>
+          <ul class="check-list">
+            <li><span>✓</span><div><b>Gunakan kata sandi kuat dan unik</b><p>Hindari memakai ulang kata sandi antar layanan.</p></div></li>
+            <li><span>✓</span><div><b>Aktifkan MFA</b><p>Tambahkan langkah verifikasi selain kata sandi.</p></div></li>
+            <li><span>✓</span><div><b>Periksa pengirim dan tautan</b><p>Cermati alamat lengkap dan konteks sebelum membuka.</p></div></li>
+            <li><span>✓</span><div><b>Jangan kirim kata sandi lewat email</b><p>Organisasi tepercaya tidak seharusnya meminta rahasia akses melalui pesan.</p></div></li>
+            <li><span>✓</span><div><b>Waspadai lampiran tak terduga</b><p>Verifikasi ke pengirim melalui kanal yang telah diketahui.</p></div></li>
+            <li><span>✓</span><div><b>Laporkan pesan mencurigakan</b><p>Gunakan prosedur pelaporan yang disediakan organisasi.</p></div></li>
+          </ul>
+        </article>
+        <article class="tips-column admin-column">
+          <div class="tips-column-heading"><span class="tips-avatar admin-avatar" aria-hidden="true">02</span><div><span>UNTUK ADMINISTRATOR</span><h3>Kelola layanan dengan cermat</h3></div></div>
+          <ul class="check-list">
+            <li><span>✓</span><div><b>Terapkan kontrol akses</b><p>Batasi hak sesuai tanggung jawab dan tinjau secara berkala.</p></div></li>
+            <li><span>✓</span><div><b>Gunakan filter spam &amp; pemindaian malware</b><p>Padukan kontrol teknis dengan proses penanganan yang jelas.</p></div></li>
+            <li><span>✓</span><div><b>Perbarui sistem dan pantau log</b><p>Perhatikan pembaruan keamanan serta aktivitas yang tidak biasa.</p></div></li>
+            <li><span>✓</span><div><b>Siapkan backup dan pemulihan</b><p>Uji prosedur pemulihan agar layanan siap menghadapi gangguan.</p></div></li>
+            <li><span>✓</span><div><b>Konfigurasikan SPF, DKIM, DMARC</b><p>Uji kebijakan domain dan pantau hasilnya sebelum penerapan.</p></div></li>
+            <li><span>✓</span><div><b>Gunakan TLS untuk transmisi</b><p>Tinjau konfigurasi dan kebutuhan koneksi antarsistem.</p></div></li>
+          </ul>
+        </article>
+      </div>
+      <aside class="tips-caveat"><span aria-hidden="true">!</span><p><b>SPF, DKIM, dan DMARC bukan stempel “pasti aman”.</b> Ketiganya membantu autentikasi domain dan kebijakan penanganan email; penerima tetap perlu menilai isi, konteks, dan tujuan pesan.</p></aside>
+    </section>
+
+    <section class="about-section" id="tentang" aria-labelledby="tentang-title">
+      <div class="section-shell about-layout">
+        <div class="about-mark" aria-hidden="true"><span>MS</span><i>✳</i><div class="about-orbit"></div></div>
+        <div class="about-copy"><p class="eyebrow">TENTANG PROYEK</p><h2 id="tentang-title">Belajar aman, <span>tanpa rasa takut.</span></h2><p>Mail Server dibuat sebagai media edukasi untuk membantu mahasiswa dan pengguna email memahami keamanan komunikasi digital dengan cara yang praktis dan mudah diikuti.</p><p>Proyek mata kuliah <b>Keamanan Komputer</b> · Program Studi <b>Teknik Informatika</b></p><div class="about-facts"><div><span>UNTUK SIAPA</span><b>Mahasiswa &amp; pengguna email</b></div><div><span>YANG TERSEDIA</span><b>Materi · simulasi · kuis · tips</b></div><div><span>IDENTITAS PEMBUAT</span><b>[Nama / kelompok dapat diperbarui]</b></div></div><p class="project-limit"><b>Batasan proyek</b> Website ini adalah media edukasi dan simulasi. Bukan layanan email produksi, pemindai pesan nyata, maupun alat audit keamanan mail server.</p></div>
+      </div>
+    </section>
+
+    <section class="references-section section-shell" id="referensi" aria-labelledby="referensi-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">BACA DARI SUMBER ASLI</p><h2 id="referensi-title">Referensi <span>pilihan.</span></h2></div>
+        <p>Materi dirangkum untuk pembelajaran. Gunakan dokumen sumber untuk konteks dan detail teknis lengkap.</p>
+      </div>
+      <div class="reference-list">
+        <article class="reference-item" id="ref-nist"><span class="ref-number">01</span><div><h3>Guide to E-Mail Security</h3><p>National Institute of Standards and Technology · NIST SP 800-177 Rev. 1 · 2019</p></div><a href="https://csrc.nist.gov/pubs/sp/800/177/r1/final" target="_blank" rel="noopener noreferrer" aria-label="Buka NIST SP 800-177 Rev. 1">Buka sumber <span aria-hidden="true">↗</span></a></article>
+        <article class="reference-item"><span class="ref-number">02</span><div><h3>Sender Policy Framework (SPF)</h3><p>IETF · RFC 7208 · 2014</p></div><a href="https://www.rfc-editor.org/rfc/rfc7208" target="_blank" rel="noopener noreferrer" aria-label="Buka RFC 7208">Buka sumber <span aria-hidden="true">↗</span></a></article>
+        <article class="reference-item"><span class="ref-number">03</span><div><h3>DomainKeys Identified Mail (DKIM) Signatures</h3><p>IETF · RFC 6376 · 2011</p></div><a href="https://www.rfc-editor.org/rfc/rfc6376" target="_blank" rel="noopener noreferrer" aria-label="Buka RFC 6376">Buka sumber <span aria-hidden="true">↗</span></a></article>
+        <article class="reference-item"><span class="ref-number">04</span><div><h3>Domain-based Message Authentication, Reporting, and Conformance (DMARC)</h3><p>IETF · RFC 7489 · 2015</p></div><a href="https://www.rfc-editor.org/rfc/rfc7489" target="_blank" rel="noopener noreferrer" aria-label="Buka RFC 7489">Buka sumber <span aria-hidden="true">↗</span></a></article>
+        <article class="reference-item"><span class="ref-number">05</span><div><h3>The Transport Layer Security (TLS) Protocol Version 1.3</h3><p>IETF · RFC 8446 · 2018</p></div><a href="https://www.rfc-editor.org/rfc/rfc8446" target="_blank" rel="noopener noreferrer" aria-label="Buka RFC 8446">Buka sumber <span aria-hidden="true">↗</span></a></article>
+        <article class="reference-item"><span class="ref-number">06</span><div><h3>Recognize and Report Phishing</h3><p>Cybersecurity and Infrastructure Security Agency (CISA)</p></div><a href="https://www.cisa.gov/secure-our-world/recognize-and-report-phishing" target="_blank" rel="noopener noreferrer" aria-label="Buka panduan CISA tentang phishing">Buka sumber <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="closing-cta section-shell" aria-label="Ajakan untuk mulai belajar">
+      <div><p class="eyebrow">SIAP MENCOBA?</p><h2>Pelan-pelan, makin <span>paham.</span></h2><p>Mulai dari satu materi, lanjutkan dengan simulasi.</p></div>
+      <div class="closing-actions"><a class="button button-light" href="#simulasi">Coba simulasi <span aria-hidden="true">↗</span></a><a class="closing-link" href="#top">Kembali ke atas ↑</a></div>
+      <span class="closing-star" aria-hidden="true">✳</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-main"><a class="brand footer-brand" href="#beranda"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect x="3" y="7" width="34" height="26" rx="9" fill="currentColor"/><path d="m9 14 11 9 11-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-name">mail<span>server</span><small>RUANG BELAJAR KEAMANAN EMAIL</small></span></a><p>Media edukasi keamanan email.<br>Belajar kritis, tetap tenang.</p><a class="footer-reference" href="#referensi">Lihat referensi <span aria-hidden="true">↗</span></a></div>
+    <div class="section-shell footer-bottom"><span>© <span id="current-year">2025</span> Mail Server · Proyek edukasi Keamanan Komputer</span><span>Dirancang untuk belajar. Bukan layanan email.</span></div>
+  </footer>
+</body>
+</html>
